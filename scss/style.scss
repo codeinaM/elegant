@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import "normalize";
+@import "layout";
+
+$primary: #222;
+$primary-font: 'Lato', sans-serif;
+$text-font: 'Raleway', sans-serif;
+
+body{
+	font: 400 22px/0.7 $primary-font;
+	color: #FFF;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1600px;
+	min-height: 100vh;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header {
+	background: #024869 url(../img/HERObg.png) 50% no-repeat;
+	background-size: cover;
+	color: #FFF;
+	padding: 0 85px 0;
+	line-height: 1.5;
+	text-align: center;
+
+}
+.ba-logo {
+	display: inline-block;
+	float: left;
+	padding-top: 50px;
+}
+.ba-hero__title {
+	font: 700 48px/0.8 $text-font;
+	text-transform: uppercase;
+	padding: 152px 0 78px;
+	margin: 0;
+	&:after {
+		content: "";
+		display: block;
+		width: 86px;
+		height: 2px;
+		background: #FFF;
+		margin: 50px 557px 46px;
+		margin-left: 50%;
+	}
+}
+
+.ba-scroll {
+	display: block;
+	width: 92px;
+	height: 92px;
+	background: url(../img/scroll.svg) no-repeat;
+	background-size: cover;
+	margin-top: 100px;
+	margin-left: 50%;
+
+}
+.ba-menu {
+	display: inline-block;
+	color: #FFF;
+	text-decoration: none;
+	font: 500 14px/0.35 $primary-font;
+	text-transform: uppercase;
+	padding: 57px 0 0 25px;
+	float: right;
+}
+.ba-our-services__title {
+	font: 700 35px/0.6 $text-font;
+	color: $primary;
+	margin-top: 116px;
+	&:after {
+		content: "";
+		display: block;
+		width: 86px;
+		height: 2px;
+		background: $primary;
+		margin: 74px 347px 80px 610px;
+	}
+}
+.ba-service {
+	color: $primary;
+	font: 400 24px/1 $primary-font;
+}
+.ba-more {
+	background: url(../img/bg.png) 50% no-repeat;
+	background-size: cover;
+	height: 500px;
+	text-align: left;
+	&__title {
+		text-transform: uppercase;
+		font: 400 45px/0.75 $primary-font;
+		padding: 98px 0 0 115px;
+	}
+	&__info {
+		font: 100 22px/0.8 $primary-font;
+		padding: 0 0 0 115px;
+	}
+	&__link {
+		color: #FFF;
+		font: 400 18px/0.65 $primary-font;
+		padding: 170px 0 0 115px;
+	}
+}
+.ba-more__img {
+	display: inline-block;
+	margin: 75px 73px 0 257px;
+}
+
+
+
+
